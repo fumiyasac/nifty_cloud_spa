@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DED706481C5F8B27006A6CFA /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED706471C5F8B27006A6CFA /* AddController.swift */; };
+		DEFC5D2A1C5B900000F48388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D291C5B900000F48388 /* AppDelegate.swift */; };
+		DEFC5D2C1C5B900000F48388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D2B1C5B900000F48388 /* ViewController.swift */; };
+		DEFC5D2F1C5B900000F48388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFC5D2D1C5B900000F48388 /* Main.storyboard */; };
+		DEFC5D311C5B900000F48388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEFC5D301C5B900000F48388 /* Assets.xcassets */; };
+		DEFC5D341C5B900000F48388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFC5D321C5B900000F48388 /* LaunchScreen.storyboard */; };
+		DEFC5D3F1C5B900000F48388 /* nifty_cloud_spaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D3E1C5B900000F48388 /* nifty_cloud_spaTests.swift */; };
+		DEFC5D4A1C5B900000F48388 /* nifty_cloud_spaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D491C5B900000F48388 /* nifty_cloud_spaUITests.swift */; };
+		EACC61876561145A1985C6EB /* libPods-nifty_cloud_spa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD32C4A6FF994D5CAFA7845 /* libPods-nifty_cloud_spa.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEFC5D3B1C5B900000F48388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEFC5D1E1C5B8FFF00F48388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEFC5D251C5B900000F48388;
+			remoteInfo = nifty_cloud_spa;
+		};
+		DEFC5D461C5B900000F48388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEFC5D1E1C5B8FFF00F48388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEFC5D251C5B900000F48388;
+			remoteInfo = nifty_cloud_spa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B69654E756E179910DA62F3 /* Pods-nifty_cloud_spa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nifty_cloud_spa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nifty_cloud_spa/Pods-nifty_cloud_spa.debug.xcconfig"; sourceTree = "<group>"; };
+		294C7F399C77FDAD4D8C8C74 /* Pods-nifty_cloud_spa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nifty_cloud_spa.release.xcconfig"; path = "Pods/Target Support Files/Pods-nifty_cloud_spa/Pods-nifty_cloud_spa.release.xcconfig"; sourceTree = "<group>"; };
+		DED706471C5F8B27006A6CFA /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		DEFC5D261C5B900000F48388 /* nifty_cloud_spa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nifty_cloud_spa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEFC5D291C5B900000F48388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEFC5D2B1C5B900000F48388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEFC5D2E1C5B900000F48388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEFC5D301C5B900000F48388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEFC5D331C5B900000F48388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEFC5D351C5B900000F48388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFC5D3A1C5B900000F48388 /* nifty_cloud_spaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nifty_cloud_spaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEFC5D3E1C5B900000F48388 /* nifty_cloud_spaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nifty_cloud_spaTests.swift; sourceTree = "<group>"; };
+		DEFC5D401C5B900000F48388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFC5D451C5B900000F48388 /* nifty_cloud_spaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nifty_cloud_spaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEFC5D491C5B900000F48388 /* nifty_cloud_spaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nifty_cloud_spaUITests.swift; sourceTree = "<group>"; };
+		DEFC5D4B1C5B900000F48388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD32C4A6FF994D5CAFA7845 /* libPods-nifty_cloud_spa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nifty_cloud_spa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEFC5D231C5B900000F48388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACC61876561145A1985C6EB /* libPods-nifty_cloud_spa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFC5D371C5B900000F48388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFC5D421C5B900000F48388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06355118A6ABB972772208F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B69654E756E179910DA62F3 /* Pods-nifty_cloud_spa.debug.xcconfig */,
+				294C7F399C77FDAD4D8C8C74 /* Pods-nifty_cloud_spa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEFC5D1D1C5B8FFF00F48388 = {
+			isa = PBXGroup;
+			children = (
+				DEFC5D281C5B900000F48388 /* nifty_cloud_spa */,
+				DEFC5D3D1C5B900000F48388 /* nifty_cloud_spaTests */,
+				DEFC5D481C5B900000F48388 /* nifty_cloud_spaUITests */,
+				DEFC5D271C5B900000F48388 /* Products */,
+				06355118A6ABB972772208F2 /* Pods */,
+				EDA58D67A740E725D6D205DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEFC5D271C5B900000F48388 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC5D261C5B900000F48388 /* nifty_cloud_spa.app */,
+				DEFC5D3A1C5B900000F48388 /* nifty_cloud_spaTests.xctest */,
+				DEFC5D451C5B900000F48388 /* nifty_cloud_spaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEFC5D281C5B900000F48388 /* nifty_cloud_spa */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC5D291C5B900000F48388 /* AppDelegate.swift */,
+				DED706471C5F8B27006A6CFA /* AddController.swift */,
+				DEFC5D2B1C5B900000F48388 /* ViewController.swift */,
+				DEFC5D2D1C5B900000F48388 /* Main.storyboard */,
+				DEFC5D301C5B900000F48388 /* Assets.xcassets */,
+				DEFC5D321C5B900000F48388 /* LaunchScreen.storyboard */,
+				DEFC5D351C5B900000F48388 /* Info.plist */,
+			);
+			path = nifty_cloud_spa;
+			sourceTree = "<group>";
+		};
+		DEFC5D3D1C5B900000F48388 /* nifty_cloud_spaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC5D3E1C5B900000F48388 /* nifty_cloud_spaTests.swift */,
+				DEFC5D401C5B900000F48388 /* Info.plist */,
+			);
+			path = nifty_cloud_spaTests;
+			sourceTree = "<group>";
+		};
+		DEFC5D481C5B900000F48388 /* nifty_cloud_spaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC5D491C5B900000F48388 /* nifty_cloud_spaUITests.swift */,
+				DEFC5D4B1C5B900000F48388 /* Info.plist */,
+			);
+			path = nifty_cloud_spaUITests;
+			sourceTree = "<group>";
+		};
+		EDA58D67A740E725D6D205DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD32C4A6FF994D5CAFA7845 /* libPods-nifty_cloud_spa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEFC5D251C5B900000F48388 /* nifty_cloud_spa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEFC5D4E1C5B900000F48388 /* Build configuration list for PBXNativeTarget "nifty_cloud_spa" */;
+			buildPhases = (
+				5710E22787E5AD835D4FEA17 /* Check Pods Manifest.lock */,
+				DEFC5D221C5B900000F48388 /* Sources */,
+				DEFC5D231C5B900000F48388 /* Frameworks */,
+				DEFC5D241C5B900000F48388 /* Resources */,
+				216417D34B1DA83866FD375B /* Embed Pods Frameworks */,
+				DDA4659CE2AF8D3C3ECC35CF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nifty_cloud_spa;
+			productName = nifty_cloud_spa;
+			productReference = DEFC5D261C5B900000F48388 /* nifty_cloud_spa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEFC5D391C5B900000F48388 /* nifty_cloud_spaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEFC5D511C5B900000F48388 /* Build configuration list for PBXNativeTarget "nifty_cloud_spaTests" */;
+			buildPhases = (
+				DEFC5D361C5B900000F48388 /* Sources */,
+				DEFC5D371C5B900000F48388 /* Frameworks */,
+				DEFC5D381C5B900000F48388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEFC5D3C1C5B900000F48388 /* PBXTargetDependency */,
+			);
+			name = nifty_cloud_spaTests;
+			productName = nifty_cloud_spaTests;
+			productReference = DEFC5D3A1C5B900000F48388 /* nifty_cloud_spaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEFC5D441C5B900000F48388 /* nifty_cloud_spaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEFC5D541C5B900000F48388 /* Build configuration list for PBXNativeTarget "nifty_cloud_spaUITests" */;
+			buildPhases = (
+				DEFC5D411C5B900000F48388 /* Sources */,
+				DEFC5D421C5B900000F48388 /* Frameworks */,
+				DEFC5D431C5B900000F48388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEFC5D471C5B900000F48388 /* PBXTargetDependency */,
+			);
+			name = nifty_cloud_spaUITests;
+			productName = nifty_cloud_spaUITests;
+			productReference = DEFC5D451C5B900000F48388 /* nifty_cloud_spaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEFC5D1E1C5B8FFF00F48388 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = just1factory;
+				TargetAttributes = {
+					DEFC5D251C5B900000F48388 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DEFC5D391C5B900000F48388 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DEFC5D251C5B900000F48388;
+					};
+					DEFC5D441C5B900000F48388 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DEFC5D251C5B900000F48388;
+					};
+				};
+			};
+			buildConfigurationList = DEFC5D211C5B8FFF00F48388 /* Build configuration list for PBXProject "nifty_cloud_spa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEFC5D1D1C5B8FFF00F48388;
+			productRefGroup = DEFC5D271C5B900000F48388 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEFC5D251C5B900000F48388 /* nifty_cloud_spa */,
+				DEFC5D391C5B900000F48388 /* nifty_cloud_spaTests */,
+				DEFC5D441C5B900000F48388 /* nifty_cloud_spaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEFC5D241C5B900000F48388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFC5D341C5B900000F48388 /* LaunchScreen.storyboard in Resources */,
+				DEFC5D311C5B900000F48388 /* Assets.xcassets in Resources */,
+				DEFC5D2F1C5B900000F48388 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFC5D381C5B900000F48388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFC5D431C5B900000F48388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		216417D34B1DA83866FD375B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nifty_cloud_spa/Pods-nifty_cloud_spa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5710E22787E5AD835D4FEA17 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA4659CE2AF8D3C3ECC35CF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nifty_cloud_spa/Pods-nifty_cloud_spa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEFC5D221C5B900000F48388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED706481C5F8B27006A6CFA /* AddController.swift in Sources */,
+				DEFC5D2C1C5B900000F48388 /* ViewController.swift in Sources */,
+				DEFC5D2A1C5B900000F48388 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFC5D361C5B900000F48388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFC5D3F1C5B900000F48388 /* nifty_cloud_spaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFC5D411C5B900000F48388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFC5D4A1C5B900000F48388 /* nifty_cloud_spaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEFC5D3C1C5B900000F48388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEFC5D251C5B900000F48388 /* nifty_cloud_spa */;
+			targetProxy = DEFC5D3B1C5B900000F48388 /* PBXContainerItemProxy */;
+		};
+		DEFC5D471C5B900000F48388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEFC5D251C5B900000F48388 /* nifty_cloud_spa */;
+			targetProxy = DEFC5D461C5B900000F48388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEFC5D2D1C5B900000F48388 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEFC5D2E1C5B900000F48388 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEFC5D321C5B900000F48388 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEFC5D331C5B900000F48388 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEFC5D4C1C5B900000F48388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEFC5D4D1C5B900000F48388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEFC5D4F1C5B900000F48388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B69654E756E179910DA62F3 /* Pods-nifty_cloud_spa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = nifty_cloud_spa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.just1factory.nifty-cloud-spa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEFC5D501C5B900000F48388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294C7F399C77FDAD4D8C8C74 /* Pods-nifty_cloud_spa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = nifty_cloud_spa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.just1factory.nifty-cloud-spa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEFC5D521C5B900000F48388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nifty_cloud_spaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.just1factory.nifty-cloud-spaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nifty_cloud_spa.app/nifty_cloud_spa";
+			};
+			name = Debug;
+		};
+		DEFC5D531C5B900000F48388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nifty_cloud_spaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.just1factory.nifty-cloud-spaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nifty_cloud_spa.app/nifty_cloud_spa";
+			};
+			name = Release;
+		};
+		DEFC5D551C5B900000F48388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = nifty_cloud_spaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.just1factory.nifty-cloud-spaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = nifty_cloud_spa;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DEFC5D561C5B900000F48388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = nifty_cloud_spaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.just1factory.nifty-cloud-spaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = nifty_cloud_spa;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEFC5D211C5B8FFF00F48388 /* Build configuration list for PBXProject "nifty_cloud_spa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFC5D4C1C5B900000F48388 /* Debug */,
+				DEFC5D4D1C5B900000F48388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEFC5D4E1C5B900000F48388 /* Build configuration list for PBXNativeTarget "nifty_cloud_spa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFC5D4F1C5B900000F48388 /* Debug */,
+				DEFC5D501C5B900000F48388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEFC5D511C5B900000F48388 /* Build configuration list for PBXNativeTarget "nifty_cloud_spaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFC5D521C5B900000F48388 /* Debug */,
+				DEFC5D531C5B900000F48388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEFC5D541C5B900000F48388 /* Build configuration list for PBXNativeTarget "nifty_cloud_spaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFC5D551C5B900000F48388 /* Debug */,
+				DEFC5D561C5B900000F48388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEFC5D1E1C5B8FFF00F48388 /* Project object */;
+}
