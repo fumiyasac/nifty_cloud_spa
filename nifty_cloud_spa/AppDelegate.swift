@@ -13,35 +13,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         NCMB.setApplicationKey("xxx", clientKey: "yyy")
         
-        var query: NCMBQuery = NCMBQuery(className: "TestClass")
-        query.whereKey("message", equalTo: "test")
+        let query: NCMBQuery = NCMBQuery(className: "TestClass")
+        query.whereKey("message", equalTo: "Hello, NCMB!")
         query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in
+            
             if (error == nil) {
-                if(objects.count > 0)
-                {
-                    var msg: AnyObject? = objects[0].objectForKey("message")
-                    var msgStr: String = msg as NSString
-                    Logger.debug("[FIND] \(msgStr)")
+                
+                if(objects.count > 0) {
+                    let msg: AnyObject? = objects[0].objectForKey("message")
+                    let msgStr: String = msg as! String
+                    print("[FIND] \(msgStr)")
                 } else {
                     var saveError : NSError? = nil
-                    var obj : NCMBObject = NCMBObject.objectWithClassName("TestClass")
+                    let obj : NCMBObject = NCMBObject(className: "TestClass")
                     obj.setObject("Hello, NCMB!", forKey: "message")
                     obj.save(&saveError)
                     
                     if(saveError == nil){
-                        Logger.debug("[SAVE] Done.")
+                        print("[SAVE] Done.")
                     } else {
-                        Logger.error("[SAVE ERROR] \(saveError)")
+                        print("[SAVE ERROR] \(saveError)")
                     }             
                 }
             } else {
-                Logger.error(error.localizedDescription)
+                print(error.localizedDescription)
             }
         })
         
