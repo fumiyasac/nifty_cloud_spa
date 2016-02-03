@@ -24,22 +24,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if (error == nil) {
                 
-                if(objects.count > 0) {
+                if (objects.count > 0) {
                     let msg: AnyObject? = objects[0].objectForKey("message")
                     let msgStr: String = msg as! String
-                    print("[FIND] \(msgStr)")
+                    print("success find data. \(msgStr)")
                 } else {
                     var saveError : NSError? = nil
                     let obj : NCMBObject = NCMBObject(className: "TestClass")
                     obj.setObject("Hello, NCMB!", forKey: "message")
                     obj.save(&saveError)
                     
-                    if(saveError == nil){
-                        print("[SAVE] Done.")
+                    if (saveError == nil) {
+                        print("success save data.")
                     } else {
-                        print("[SAVE ERROR] \(saveError)")
+                        print("failure save data. \(saveError)")
                     }             
                 }
+                
             } else {
                 print(error.localizedDescription)
             }
