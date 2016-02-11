@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEC015891C6B76AD00161C9C /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC015871C6B76AD00161C9C /* MemoCell.swift */; };
+		DEC0158A1C6B76AD00161C9C /* MemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC015881C6B76AD00161C9C /* MemoCell.xib */; };
 		DED706481C5F8B27006A6CFA /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED706471C5F8B27006A6CFA /* AddController.swift */; };
 		DEFC5D2A1C5B900000F48388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D291C5B900000F48388 /* AppDelegate.swift */; };
 		DEFC5D2C1C5B900000F48388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC5D2B1C5B900000F48388 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		1B69654E756E179910DA62F3 /* Pods-nifty_cloud_spa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nifty_cloud_spa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nifty_cloud_spa/Pods-nifty_cloud_spa.debug.xcconfig"; sourceTree = "<group>"; };
 		294C7F399C77FDAD4D8C8C74 /* Pods-nifty_cloud_spa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nifty_cloud_spa.release.xcconfig"; path = "Pods/Target Support Files/Pods-nifty_cloud_spa/Pods-nifty_cloud_spa.release.xcconfig"; sourceTree = "<group>"; };
 		DE757A1C1C603A6E006AAE2E /* nifty_cloud_spa-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "nifty_cloud_spa-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEC015871C6B76AD00161C9C /* MemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		DEC015881C6B76AD00161C9C /* MemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoCell.xib; sourceTree = "<group>"; };
 		DED706471C5F8B27006A6CFA /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
 		DEFC5D261C5B900000F48388 /* nifty_cloud_spa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nifty_cloud_spa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFC5D291C5B900000F48388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DEC0158B1C6B7AED00161C9C /* Bridging-Header */ = {
+			isa = PBXGroup;
+			children = (
+				DE757A1C1C603A6E006AAE2E /* nifty_cloud_spa-Bridging-Header.h */,
+			);
+			name = "Bridging-Header";
+			sourceTree = "<group>";
+		};
+		DEC0158C1C6B7B0500161C9C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DEC015871C6B76AD00161C9C /* MemoCell.swift */,
+				DEC015881C6B76AD00161C9C /* MemoCell.xib */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		DEFC5D1D1C5B8FFF00F48388 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +137,8 @@
 		DEFC5D281C5B900000F48388 /* nifty_cloud_spa */ = {
 			isa = PBXGroup;
 			children = (
-				DE757A1C1C603A6E006AAE2E /* nifty_cloud_spa-Bridging-Header.h */,
+				DEC0158B1C6B7AED00161C9C /* Bridging-Header */,
+				DEC0158C1C6B7B0500161C9C /* Components */,
 				DEFC5D291C5B900000F48388 /* AppDelegate.swift */,
 				DED706471C5F8B27006A6CFA /* AddController.swift */,
 				DEFC5D2B1C5B900000F48388 /* ViewController.swift */,
@@ -264,6 +286,7 @@
 				DEFC5D341C5B900000F48388 /* LaunchScreen.storyboard in Resources */,
 				DEFC5D311C5B900000F48388 /* Assets.xcassets in Resources */,
 				DEFC5D2F1C5B900000F48388 /* Main.storyboard in Resources */,
+				DEC0158A1C6B76AD00161C9C /* MemoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +362,7 @@
 				DED706481C5F8B27006A6CFA /* AddController.swift in Sources */,
 				DEFC5D2C1C5B900000F48388 /* ViewController.swift in Sources */,
 				DEFC5D2A1C5B900000F48388 /* AppDelegate.swift in Sources */,
+				DEC015891C6B76AD00161C9C /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

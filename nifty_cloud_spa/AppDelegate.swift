@@ -17,14 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         NCMB.setApplicationKey("xxx", clientKey: "yyy")
-        
+
+        /*
         let query: NCMBQuery = NCMBQuery(className: "TestClass")
         query.whereKey("message", equalTo: "Hello, NCMB!")
         query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in
             
-            if (error == nil) {
+            if error == nil {
                 
-                if (objects.count > 0) {
+                if objects.count > 0 {
                     let msg: AnyObject? = objects[0].objectForKey("message")
                     let msgStr: String = msg as! String
                     print("success find data. \(msgStr)")
@@ -34,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     obj.setObject("Hello, NCMB!", forKey: "message")
                     obj.save(&saveError)
                     
-                    if (saveError == nil) {
+                    if saveError == nil {
                         print("success save data.")
                     } else {
                         print("failure save data. \(saveError)")
@@ -45,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         })
+        */
         
         return true
     }
