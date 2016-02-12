@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.memoTableView.registerNib(nib, forCellReuseIdentifier: "MemoCell")
         
         //自動計算の場合は必要
-        self.memoTableView.estimatedRowHeight = 230.0
+        self.memoTableView.estimatedRowHeight = 380.0
         self.memoTableView.rowHeight = UITableViewAutomaticDimension
     }
     

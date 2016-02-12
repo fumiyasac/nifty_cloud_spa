@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         NCMB.setApplicationKey("xxx", clientKey: "yyy")
-
+        
         /*
         let query: NCMBQuery = NCMBQuery(className: "TestClass")
         query.whereKey("message", equalTo: "Hello, NCMB!")
