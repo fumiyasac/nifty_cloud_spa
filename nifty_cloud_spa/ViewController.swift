@@ -76,7 +76,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let fileData = NCMBFile.fileWithName(filename, data: nil) as! NCMBFile
         
         fileData.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError!) -> Void in
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             
             if error != nil {
                 print("写真の取得失敗: \(error)")
