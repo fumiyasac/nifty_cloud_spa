@@ -16,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        //各自のNCMBで作成したクライアントキーとアプリケーションキーを入れて下さい
         NCMB.setApplicationKey("xxx", clientKey: "yyy")
         
         /*
+        //NCMBとの疎通試験を行う場合のテストコード
         let query: NCMBQuery = NCMBQuery(className: "TestClass")
         query.whereKey("message", equalTo: "Hello, NCMB!")
         query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in

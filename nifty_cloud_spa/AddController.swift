@@ -135,7 +135,7 @@ class AddController: UIViewController, UITextFieldDelegate, UIImagePickerControl
                 var saveError: NSError? = nil
                 let obj: NCMBObject = NCMBObject(className: "MemoClass")
                 obj.objectId = self.targetMemoObjectId
-                obj.fetchInBackgroundWithBlock({(NSError error) in
+                obj.fetchInBackgroundWithBlock({(error) in
                     
                     if (error == nil) {
                         
@@ -333,17 +333,17 @@ class AddController: UIViewController, UITextFieldDelegate, UIImagePickerControl
         
         let obj: NCMBObject = NCMBObject(className: "MemoClass")
         obj.objectId = self.targetMemoObjectId
-        obj.fetchInBackgroundWithBlock({(NSError error) in
+        obj.fetchInBackgroundWithBlock({(error) in
             
             if (error == nil) {
                 
-                obj.deleteInBackgroundWithBlock({(NSError error) in
+                obj.deleteInBackgroundWithBlock({(error) in
                     
                     if (error == nil) {
                         
                         //削除成功時に画像も一緒に削除する
                         let fileData = NCMBFile.fileWithName(self.targetFileName, data: nil) as! NCMBFile
-                        fileData.deleteInBackgroundWithBlock({(NSError error) in
+                        fileData.deleteInBackgroundWithBlock({(error) in
                             print("画像データ削除完了: \(self.targetFileName)")
                         })
                         

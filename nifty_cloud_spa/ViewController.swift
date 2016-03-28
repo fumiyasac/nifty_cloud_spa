@@ -143,7 +143,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let query: NCMBQuery = NCMBQuery(className: "MemoClass")
         query.orderByDescending("createDate")
-        query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in
+        query.findObjectsInBackgroundWithBlock({(objects, error) in
             
             if error == nil {
                 
